@@ -138,6 +138,155 @@ const EditableTable = () => {
               />
             </Grid>
 
+            <Grid item xs={12} sm={6}>
+              <TextField
+                label="StateCode"
+                fullWidth
+                value={invoice.CustomerInformation.StateCode}
+                onChange={(e) =>
+                  handleInputChange(e, index, "CustomerInformation", "StateCode")
+                }
+                disabled={editIdx !== index}
+              />
+            </Grid>
+
+            <Grid item xs={12} sm={6}>
+              <TextField
+                label="GSTIN"
+                fullWidth
+                value={invoice.CustomerInformation.GSTIN}
+                onChange={(e) =>
+                  handleInputChange(e, index, "CustomerInformation", "GSTIN")
+                }
+                disabled={editIdx !== index}
+              />
+            </Grid>
+
+            {/* <Grid item xs={12} sm={6}>
+              <TextField
+                label="S.No"
+                fullWidth
+                value={invoice.ProductDetails.S.No}
+                onChange={(e) =>
+                  handleInputChange(e, index, "ProductDetails", "S.No")
+                }
+                disabled={editIdx !== index}
+              />
+            </Grid> */}
+
+            <Grid item xs={12} sm={6}>
+              <TextField
+                label="DescriptionOfGoods"
+                fullWidth
+                value={invoice.ProductDetails.DescriptionOfGoods}
+                onChange={(e) =>
+                  handleInputChange(e, index, "ProductDetails", "DescriptionOfGoods")
+                }
+                disabled={editIdx !== index}
+              />
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <TextField
+                label="HSNCode"
+                fullWidth
+                value={invoice.ProductDetails.HSNCode}
+                onChange={(e) =>
+                  handleInputChange(e, index, "ProductDetails", "HSNCode")
+                }
+                disabled={editIdx !== index}
+              />
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <TextField
+                label="Quantity"
+                fullWidth
+                value={invoice.ProductDetails.Quantity}
+                onChange={(e) =>
+                  handleInputChange(e, index, "ProductDetails", "Quantity")
+                }
+                disabled={editIdx !== index}
+              />
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <TextField
+                label="Rate"
+                fullWidth
+                value={invoice.ProductDetails.Rate}
+                onChange={(e) =>
+                  handleInputChange(e, index, "ProductDetails","Rate")
+                }
+                disabled={editIdx !== index}
+              />
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <TextField
+                label="Amount"
+                fullWidth
+                value={invoice.ProductDetails.Amount}
+                onChange={(e) =>
+                  handleInputChange(e, index, "ProductDetails", "Amount")
+                }
+                disabled={editIdx !== index}
+              />
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <TextField
+                label="TotalAmountAfterTax"
+                fullWidth
+                value={invoice.TaxDetails.TotalAmountAfterTax}
+                onChange={(e) =>
+                  handleInputChange(e, index, "TaxDetails", "TotalAmountAfterTax")
+                }
+                disabled={editIdx !== index}
+              />
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <TextField
+                label="AddCGST9Percent"
+                fullWidth
+                value={invoice.TaxDetails.AddCGST9Percent}
+                onChange={(e) =>
+                  handleInputChange(e, index, "TaxDetails", "AddCGST9Percent")
+                }
+                disabled={editIdx !== index}
+              />
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <TextField
+                label="TotalAmountAfterTax"
+                fullWidth
+                value={invoice.TaxDetails.TotalAmountAfterTax}
+                onChange={(e) =>
+                  handleInputChange(e, index, "TaxDetails", "TotalAmountAfterTax")
+                }
+                disabled={editIdx !== index}
+              />
+            </Grid>
+
+            <Grid item xs={12} sm={6}>
+              <TextField
+                label="TermsAndConditions"
+                fullWidth
+                value={invoice.TermsAndConditions}
+                onChange={(e) =>
+                  handleInputChange(e, index,"TermsAndConditions")
+                }
+                disabled={editIdx !== index}
+              />
+            </Grid>
+
+            <Grid item xs={12} sm={6}>
+              <TextField
+                label="AuthorizedSignatory"
+                fullWidth
+                value={invoice.AuthorizedSignatory}
+                onChange={(e) =>
+                  handleInputChange(e, index, "AuthorizedSignatory")
+                }
+                disabled={editIdx !== index}
+              />
+            </Grid>
+
           </Grid>
 
           <Box mt={2}>

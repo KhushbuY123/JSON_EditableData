@@ -16,7 +16,7 @@ export const results = [
             "StateCode": "08",
             "GSTIN": "08ACEP5009C2ZT"
         },
-        "ProductDetails": [
+        "ProductDetails": 
             {
                 "S.No": "1",
                 "DescriptionOfGoods": "12 ICY 12 Button",
@@ -25,7 +25,7 @@ export const results = [
                 "Rate": "",
                 "Amount": "5700.00"
             }
-        ],
+        ,
         "TaxDetails": {
             "TotalAmountBeforeTax": "5700.00",
             "AddCGST9Percent": "142.50",
